@@ -11,33 +11,55 @@
   background-color: #f2f2f2;
   border-radius: 4px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  max-width: 100%;
 }
 
-.form-container label {
-  display: block;
-  margin-bottom: 10px;
+.card-form {
+  margin-bottom: 20px;
 }
 
-.form-container input[type="text"] {
-  width: 100%;
-  padding: 10px;
-  border: 1px solid #ccc;
+.card-input {
+  width: 95%;
+  padding: 5px;
+  border: 5px solid #ccc;
   border-radius: 4px;
+  font-size: 16px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
-.form-container button {
+.card-input:focus {
+  outline: none;
+  border-color: #4caf50;
+  box-shadow: 0 0 4px rgba(76, 175, 80, 0.4);
+}
+
+.validate-button {
   display: block;
   width: 100%;
+  padding: 12px;
   margin-top: 10px;
-  padding: 10px;
   background-color: #4caf50;
   color: #fff;
   border: none;
   border-radius: 4px;
   cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease-in-out;
 }
 
-.form-container p {
-  margin-top: 10px;
+.validate-button:hover {
+  background-color: #45a049;
+}
+
+.validation-message {
   font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.valid-message {
+  color: green;
+}
+
+.invalid-message {
+  color: red;
 }

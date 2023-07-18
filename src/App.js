@@ -1,14 +1,11 @@
 import './App.css';
-import ValidCard from './components/ValidCard';
+import Form from './components/Form';
 
-function App() {
+export default function App() {
   return (
     <div className="container">
-      <div className="form-container">
-        <ValidCard />
-      </div>
+      <Form />
     </div>
   );
 }
 
-export default App;
